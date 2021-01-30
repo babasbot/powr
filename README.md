@@ -18,6 +18,10 @@ $ powr
 ▲ 83% ⚡
 ```
 
+### Installation
+
+Run `brew tap babasbot/powr` and then `brew install powr`.
+
 ### Disclaimer
 
 I created this script to display my laptop's battery status on my tmux status bar. It relies on the `pmset` command.
