@@ -3,6 +3,7 @@
 package PowrFormatter;
 
 use strict;
+use utf8;
 use warnings;
 
 sub new {
@@ -20,9 +21,9 @@ sub power_source {
   my $source = $powr->power_source;
 
   if ($source eq 'AC') {
-    return '⚡';
+    return "\N{U+26A1}"; # high voltage emoji
   } elsif ($source eq 'Battery') {
-    return '🔋';
+    return "\N{U+1F50B}"; # battery emoji
   } else {
     return '';
   }
